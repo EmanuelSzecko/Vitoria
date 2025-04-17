@@ -1,0 +1,137 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    background-color: #fefefe;
+    color: #333;
+    padding-bottom: 60px;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2rem;
+  }
+  
+  header nav {
+    margin-top: 10px;
+  }
+  
+  header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  header nav a:hover {
+    color: #ff69b4;
+  }
+  
+  header nav a.active {
+    text-decoration: underline;
+  }
+  
+  /* Conteúdo principal */
+  main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+  }
+  
+  /* Títulos */
+  h2 {
+    color: #ff4081;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    color: #444;
+    margin-top: 20px;
+  }
+  
+  /* Parágrafos e listas */
+  p {
+    margin-bottom: 15px;
+  }
+  
+  ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  
+  ul li {
+    margin-bottom: 8px;
+  }
+  
+  /* Seções de destaque */
+  section {
+    margin-bottom: 40px;
+  }
+  
+  .carrossel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  }
+  
+  .carrossel-imagens img {
+    width: 100%;
+    display: none;
+    transition: opacity 0.5s ease;
+  }
+  
+  .carrossel-imagens img.ativo {
+    display: block;
+  }
+  
+  .carrossel-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+  }
+  
+  .carrossel-container .anterior {
+    left: 10px;
+  }
+  
+  .carrossel-container .proximo {
+    right: 10px;
+  }
+  
+  
+  /* Rodapé */
+  footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
